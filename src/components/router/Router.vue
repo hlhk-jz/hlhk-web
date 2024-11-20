@@ -11,6 +11,7 @@
             <div style="padding: 10px">
                 <router-link class="my-link" :to="{name:'home'}">Home</router-link> <br>
                 <router-link :to="{name:'echarts'}">echarts</router-link>  <br>
+                <router-link :to="{name:'html5Router'}">html5Router</router-link>  <br>
             </div>
 
         </div>
@@ -24,7 +25,12 @@
 
 <script>
     export default {
-        name: 'Router'
+        name: 'Router',
+        data(){
+            return{
+                isTrue: false
+            }
+        }
     }
 </script>
 
